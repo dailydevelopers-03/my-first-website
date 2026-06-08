@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: White;
+    color: white;
+}
+
+/* Side drawer */
+.drawer {
+
+position: fixed;
+top: 0;
+left: -82%;
+
+width: 82%;
+height: 100%;
+
+background: #1565C0;
+
+padding: 28px 22px;
+
+box-sizing: border-box;
+
+transition: 0.35s ease;
+
+box-shadow: 0 0 25px rgba(0,0,0,0.25);
+
+overflow-y: auto;
+z-index: 1000;
+}
+
+
+/* Open drawer */
+.drawer.active {
+left: 0;
+}
+
+
+/* Header */
+.drawerHeader{
+
+display:flex;
+align-items:center;
+
+margin-top:10px;
+margin-bottom:35px;
+}
+
+
+/* Logo box */
+.logoBox{
+
+width:58px;
+height:58px;
+
+border-radius:18px;
+
+background:white;
+color:#0F5AB3;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:24px;
+font-weight:bold;
+}
+
+
+/* Texts beside logo */
+.logoTexts{
+margin-left:14px;
+}
+
+
+.drawerTitle{
+
+margin:0;
+font-size:28px;
+font-weight:bold;
+color:white;
+}
+
+
+.drawerSubtitle{
+
+margin:0;
+margin-top:4px;
+
+font-size:15px;
+color:rgba(255,255,255,0.7);
+}
+
+
+/* Search container */
+.drawableSearchBarContainer{
+
+display:flex;
+align-items:center;
+
+height:58px;
+
+background: #0D47A1;
+
+border-radius:18px;
+
+padding:0 18px;
+
+margin-bottom:30px;
+}
+
+
+/* Search input */
+.searchDrawerBar{
+
+flex:1;
+
+background:transparent;
+
+border:none;
+outline:none;
+
+font-size:20px;
+color:white;
+}
+
+/* Placeholder */
+.searchDrawerBar::placeholder{
+color:rgba(255,255,255,0.65);
+}
+
+.searchIcon2{
+  width:35px;
+  height:35px;
+  filter:brightness(1);
+  margin-right:8px;
+}
+
+/* Menu title */
+.menuTitle{
+
+font-size:20px;
+font-weight:600;
+
+margin-bottom:20px;
+
+color:rgba(255,255,255,0.75);
+}
+
+
+/* Menu panel */
+.settingsPanel{
+
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+
+/* Each menu item */
+.menuItem{
+
+padding:18px 20px;
+
+border-radius:18px;
+font-size:22px;
+font-weight:500;
+
+transition:0.25s;
+}
+
+
+/* Active menu */
+.activeMenu{
+background:rgba(225,225,225,0.18);
+backdrop-filter: blur(4px);
+}
+
+/* Dark background overlay */
+.overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 200%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.4);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.4s;
+}
+
+/* Show overlay */
+.overlay.active {
+    background:transparent;
+    visibility: visible;
+}
+
+
+
+/* Top bar 1 */
+.topbar {
+    display:flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #1565C0;
+}
+
+ /*Ripple Circle*/
+.menu::before{
+  width:0;
+  height:0;
+  content:"";
+  position:absolute;
+  top:60%;
+  left:40%;
+  overflow:hidden;
+  border-radius:50%;
+  background:rgba(255,255,255,0.25);
+  transform:translate(-50%,-50%);
+  transition:width 0.35s,height 0.35s;
+}
+/*expand the ripple on click*/
+.menu:active::before{
+  width:100px;
+  height:100px;
+}
+
+/* Menu icon */
+.menu {
+    width:45px;
+	height:45px;
+    font-size: 40px; 
+	margin-left:20px;
+	position:relative;
+	margin-bottom:10px;
+    z-index:2;
+	user-select:none;
+   -webkit-user-drag:none;
+}
+
+
+.headerTitle{
+  flex:1;
+  font-size:33px;
+  text-align:center;
+  color:white;
+  margin-left:120px;
+  
+  
+}
+
+
+/*Search icon at the top right side*/
+.searchBtn{
+  width:70px;
+  height:70px;
+  position:relative;
+  cursor:pointer;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  margin-right: auto; 
+  margin-right:25px;
+  
+ }
+ /*Ripple Circle*/
+.searchBtn::before{
+  width:0;
+  height:0;
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  border-radius:50%;
+  background:rgba(255,255,255,0.25);
+  transform:translate(-50%,-50%);
+  transition:width 0.35s,height 0.35s;
+}
+/*expand the ripple on click*/
+.searchBtn:active::before{
+ width:120px;
+ height:120px;
+ opacity:1;
+}
+
+/*search top bar icon*/
+.topSearchIcon {
+    width: 46px;
+    height: 46px;
+    filter: invert(1);
+	position:relative;
+    z-index:2;
+	user-select:none;
+   -webkit-user-drag:none;
+	
+}
+
+/*Mic icon at the top right side*/
+.topMicIcon {
+    width: 44px;
+    height: 44px;
+	margin-right: 25px;
+    margin-left: 25px;
+    filter: invert(1);
+}
+
+
+/*image dp icon*/
+.userDp{
+  margin-right:10px;
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  object-fit: cover;
+}
+
+/* Middle TopBar 2 */
+.middleTopBar{
+
+    display:flex;
+    align-items:center;
+    padding:15px;
+    background-color:#1976D2;
+    opacity:0;
+    transform:translateY(-30px);
+    transition:0.4s;
+    pointer-events:none;
+}
+
+/* Opening animation */
+.middleTopBar.active{
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:auto;
+}
+
+/* Search bar container */
+.searchBarContainer {
+	align-items:center;
+	display:flex;
+	height:65px;
+    background: white;
+    padding: 0 12px;
+	flex:1;
+    border-radius: 30px;
+}
+
+/*searchIcon inside the searchBar*/
+.searchIcon{
+  width:35px;
+  height:35px;
+  filter:brightness(0);
+  margin-right:8px;
+ }
+
+.searchbar {
+    flex:1;
+	height:40px;
+	outline:none;
+    border: none;
+    font-size: 24px;
+}
+
+
+/* Main section 3 */
+.section1 {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Title */
+.title {
+    background-color: orange;
+    color: black;
+    padding: 15px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+/* Description */
+.description {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Button */
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: orange;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
