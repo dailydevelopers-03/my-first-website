@@ -1,194 +1,131 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Roshan's First Website</title>
+	
+	<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
     <link href="css/styles.css" rel="stylesheet">
   </head>
-
   <body>
 
-    <div class="topbar">
+	
+	<div class="topBar">
 
-      <div class="menu"
-		onclick="openMenuDrawer()">
+	  <div class="iconCard">
 		
-        ☰
-      </div>
+	 <img src="images/micIcon.png" class="appIcon">
+	   
+	  </div>
 	  
+   <div class="titleBox">
+	 
 	  <h1 class="headerTitle">
-		SkyWon <span class="xLogo">X</span>
+		App: Voice Recorder
 	  </h1>
 	  
-	 
-	 <!--search top icon container--> 
-	<div class="searchBtn"
-	  onclick="openMiddleTopBar()">
-	  
-	 <img src="images/search.png"
-	  class="topSearchIcon">
+	 <p class="headerSubtitle">
+     Simple, fast, and reliable audio recording
+	 </p> 
+   </div> 
 	</div>
-		
-	  
-	  <!--mic btn container at the top--> 
-
-	  <img src="images/notification.png"
-		class="topMicIcon">
-
-	 
-	  <img src="images/profile.png"
-		class="userDp">
-		
-    </div>
 	
- <!--Middle Top Bar with searchBar inside it-->
-   <div class="middleTopBar"
-	 id="middleBar">
-	 
-	 <div class="searchBarContainer"
-	   id="searchBox">
+	<div class="imageBannerBar">
 
-	  <img src="images/icon_search.webp"
-		class="searchIcon">
-
-	   <input 
-		 type="text" 
-		 placeholder="Search Your Favorite..." 
-		 class="searchbar">
-
-	 </div>
-
-   </div>
-	 
-	 
-	
-	<!--menu drawer list features-->
-	  <div class="drawer" id="menuDrawer">
-
-	  <div class="drawerHeader">
-
-		<div class="logoBox">
-		  SX
-		</div>
-
-		<div class="logoTexts">
-		  <h1 class="drawerTitle">SkyWon X</h1>
-		  <p class="drawerSubtitle">Creative Studio</p>
-		</div>
-
+	  <div class="phoneSection">
+        <img src="images/threePhones.png" class="appBannerIcon">
 	  </div>
 
+	  <div class="bannerTextSection">
 
-	  <div class="drawableSearchBarContainer"
-		id="searchDrawerBox">
-		
+        <h2 class="bannerTitle">
+		  Voice Recorder
+        </h2>
 
-		<img src="images/icon_search.webp"
-		  class="searchIcon2">
-		
+        <p class="bannerDescription">
+		  Record, trim, organize, and manage
+		  your audio recordings easily.
+        </p>
 
-		<input 
-		  type="text"
-		  placeholder="Search..."
-		  class="searchDrawerBar">
-
-	  </div>
-
-	  <h2 class="menuTitle">Menu</h2>
-
-
-	  <div class="settingsPanel">
-
-		<div class="menuItem activeMenu">
-		  Home
-		</div>
-
-		<div class="menuItem">
-		  Activity
-		</div>
-
-		<div class="menuItem">
-		  Tasks
-		</div>
-
-		<div class="menuItem">
-		  Users
-		</div>
-
-		<div class="menuItem">
-		  Notification
-		</div>
-
-		<div class="menuItem">
-		  Settings
-		</div>
+        <div class="bannerButtons">
+		  <a href="#" class="downloadBtn">Download App</a>
+		  <a href="privacy.html" class="privacyBtn">
+			Privacy Policy
+		  </a>
+        </div>
 
 	  </div>
 
 	</div>
 	
 	
-	<div class="overlay"
-	  id="overlay"
-	  onclick="closeMenuDrawer()">
+	<div class="middleTopBar">
+
+	  <div class="navigationSection">
+
+        <a href="index.html" class="homeTab">Home</a>
+
+        <a href="privacy.html" class="privacyTab">
+		  Privacy Policy
+        </a>
+
+        <a href="credits.html" class="creditTab">
+		  Credits
+        </a>
+
+        <a href="contact.html" class="contactTab">
+		  Contact
+        </a>
+
+	  </div>
+	 
+	</div>
+	
+	
+	<div class="featuresSection">
+
+	  <div class="featureCard1">
+		<div class="featureMicIcon">🎧</div>
+		<p class="featureTitle1">Private Playback Recordings</p>
+	  </div>
+
+	  <div class="featureCard2">
+		<div class="featureTrimmingIcon">✂️</div>
+		<p class="featureTitle2">Audio Trimming</p>
+	  </div>
+
+	  <div class="featureCard3">
+		<div class="featureFavoriteIcon">❤</div>
+		<p class="featureTitle3">Favorites</p>
+	  </div>
+
+	  <div class="featureCard4">
+		<div class="featurePrivatePlayBackIcon">▶</div>
+		<p class="featureTitle4">Private Playback</p>
+	  </div>
+
+	  <div class="featureCard5">
+		<div class="featureManualIcon">✎</div>
+		<p class="featureTitle5">Manual Naming</p>
+	  </div>
+
+	  <div class="featureCard6">
+		<div class="featureKeepScreenAwakeIcon">💡</div>
+		<p class="featureTitle6">Keep Screen Awake</p>
+	  </div>
 
 	</div>
 	
 	
-
-    <div class="section1">
-
-      <h1 class="title">Hello Roshan 🚀</h1>
-
-      <p class="description">
-        Welcome to my first website. 
-        I am learning web development using my phone.
-      </p>
-
-      <button class="btn">Open</button>
-
-    </div>
-	
-	<!--JavaScript Command Section-->
-	 
- <!--open Search bar logic clickListener and id section-->
-	<script>
-	function openMiddleTopBar(){
-	 document.getElementById("middleBar")
-	 .classList.toggle("active");
-	 }
-	
-	</script>
 	
 	
-	<!--open menu drawer logic clickListener-->
-	<script>
-    function openMenuDrawer(){
-	  document.getElementById("menuDrawer")
-	  .classList.toggle("active");
-	 
-	  document.getElementById("overlay")
-	  .classList.toggle("active");
-	  
-	  }
-	  
-	function closeMenuDrawer() {
-
-    document
-    .getElementById("menuDrawer")
-    .classList.remove("active");
-
-    document
-    .getElementById("overlay")
-    .classList.remove("active");
 	
-	}
-	
-	  
-	  </script>
+
 
   </body>
+</html>		
 
-</html>
+
 
 
 
