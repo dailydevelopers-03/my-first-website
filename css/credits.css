@@ -1,0 +1,641 @@
+body
+{
+  margin:0px;
+  font-family:Arial, sans-serif;
+  background-color:White;
+  
+  }
+
+/* Top bar 1 */
+.topBar {
+    display:flex;
+    align-items: center;
+    padding:15px 20px;
+    background:White;
+}
+
+.iconCard{
+  display:flex;
+  width:40px;
+  height:40px;
+  margin-bottom:5px;
+  border-radius:14px;
+  background:#081A63;
+  align-items:center;
+  justify-content:center;
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.appIcon{
+    width:20px;
+    height:20px;
+	filter:brightness(0) invert(1);
+	margin:0;
+	padding:0;
+}
+
+.titleBox{
+  display:flex;
+  flex-direction:column;
+}
+
+.headerTitle{
+  font-size:14px;
+  text-align:center;
+  margin-right:90px;
+}
+
+.headerSubtitle{
+  margin-top:1px;
+  margin-bottom:0;
+  font-size:12px;
+  color:#6B7280;
+  
+}
+
+ .middleTopBar{
+  display:flex;
+  height:40px;
+  justify-content:center;
+  align-items:center;
+  border-bottom:1px solid #E0E0E0;
+  background:#F5F5F5;
+
+ }
+ 
+ .navigationSection{
+   display:flex;
+   gap:30px;
+   padding:14px 0;
+   
+ }
+
+ .homeTab{ 
+  text-decoration:none;
+  color:#333;
+  font-size:14px;
+  font-weight:500;
+  padding-bottom:8px;
+  
+  }
+  
+ .privacyTab{
+  text-decoration:none;
+  font-size:14px;
+  color:#333;
+  font-weight:500;
+  padding-bottom:8px;
+   
+ }
+ 
+.creditTab{
+  text-decoration:none;
+  color:#333;
+  font-size:14px;
+  font-weight:500;
+  padding-bottom:8px;
+}
+ .contactTab{
+  text-decoration:none;
+  font-size:14px;
+  color:#333;
+  font-weight:500;
+  padding-bottom:8px;
+
+ }
+
+ .creditsContainer{
+    max-width:900px;
+    margin:0 auto;
+    padding:25px;
+}
+
+.creditsTitle{
+    margin-bottom:5px;
+    font-size:28px;
+    color:#111827;
+	text-align:center;
+}
+
+.creditsCard{
+    background:white;
+    border-radius:4px;
+    border:1px solid #E5E7EB;
+    overflow:hidden;
+    margin-top:25px;
+}
+
+.flaticonCreditItem{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    
+}
+
+.flaticonCreditItem:last-child{
+    border-bottom:none;
+}
+
+.flaticonCreditInfo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.flaticonIconCreators{
+    width:43px;
+    height:43px;
+    border-radius:50%;
+    background:#E0E0E0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.flaticonWebImage{
+  width:45px;
+  height:45px;
+  margin-top:1px;
+  
+ }
+
+.flaticonHeader h3{
+    margin:0;
+    font-size:16px;
+    color:#111827;
+}
+
+.flaticonHeader p{
+    margin-top:4px;
+    margin-bottom:0;
+    font-size:13px;
+    color:#6B7280;
+}
+
+.creditorsListOpenButton{
+  text-decoration:none;
+    color:#6B7280;
+    font-size:22px;
+}
+
+.creditorsListOpenButton{
+    font-size:22px;
+    transition:transform 0.35s ease;
+}
+
+.creditorsListOpenButton.open{
+    transform:rotate(180deg);
+}
+
+.flaticonIconCreatorContainer{
+   max-height:0;
+   overflow:hidden;
+   transition:max-height 0.35s ease;
+}
+
+.flaticonIconCreatorContainer.open{
+   max-height:900px;
+   overflow-y:auto;
+}
+
+ 
+.creditItem{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    
+}
+
+.creditItem:last-child{
+    border-bottom:none;
+}
+
+.creditInfo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.creditCreator{
+    width:43px;
+    height:43px;
+    border-radius:50%;
+    background:#E0E0E0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.creatorImagePng{
+  width:45px;
+  height:45px;
+  margin-top:5px;
+  
+}
+
+.creatorImagePng2{
+  width:45px;
+  height:45px;
+  margin-top:3px;
+  
+}
+
+.creatorImagePng3{
+  width:45px;
+  height:45px;
+  margin-top:3px;
+ 
+ }
+
+.creatorImagePng4{
+  width:45px;
+  height:45px;
+  margin-top:3px;
+}
+
+.creatorImagePng5{
+  width:45px;
+  height:45px;
+  margin-top:3px;
+}
+
+.creatorImagePng6{
+  width:45px;
+  height:45px;
+  margin-top:3px;
+}
+
+.creatorImagePng7{
+ width:45px;
+ height:45px;
+ margin-top:3px;
+ 
+}
+
+.creatorImagePng8{
+ width:45px;
+ height:45px;
+ margin-top:3px;
+ 
+ }
+ 
+.creatorImagePng9{
+ width:45px;
+ height:45px;
+ margin-top:3px;
+ 
+ }
+ 
+.creatorImagePng10{
+ width:45px;
+ height:45px;
+ margin-top:3px;
+ }
+ 
+.creatorImagePng11{
+  width:45px;
+  height:45px;
+  margin-top:3px;
+   
+ }
+ 
+.creditText h3{
+    margin:0;
+    font-size:16px;
+    color:#111827;
+}
+
+.creditText p{
+    margin-top:4px;
+    margin-bottom:0;
+    font-size:13px;
+    color:#6B7280;
+}
+
+.creditLink{
+    text-decoration:none;
+    color:#6B7280;
+    font-size:22px;
+}
+
+
+
+/** Credit Section 2 **/
+
+.section2Divider{
+    height:1px;
+    background:#E5E7EB;
+    margin:0 18px;
+}
+
+.websiteCreditItem{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    
+}
+
+.websiteCreditItem:last-child{
+    border-bottom:none;
+}
+
+.websiteCreditInfo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.websiteIconCreators{
+    width:43px;
+    height:43px;
+    border-radius:50%;
+    background:#E0E0E0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.websiteWebImage{
+  width:45px;
+  height:45px;
+  margin-top:1px;
+  
+ }
+
+.websiteHeader h3{
+    margin:0;
+    font-size:16px;
+    color:#111827;
+}
+
+.websiteHeader p{
+    margin-top:4px;
+    margin-bottom:0;
+    font-size:13px;
+    color:#6B7280;
+}
+
+.websiteListOpenButton{
+  text-decoration:none;
+    color:#6B7280;
+    font-size:22px;
+}
+
+.websiteListOpenButton{
+    font-size:22px;
+    transition:transform 0.35s ease;
+}
+
+.websiteListOpenButton.open2{
+    transform:rotate(180deg);
+}
+
+.websiteIconCreatorContainer{
+   max-height:0;
+   overflow:hidden;
+   transition:max-height 0.35s ease;
+}
+
+.websiteIconCreatorContainer.open2{
+   max-height:600px;
+   overflow-y:auto;
+}
+
+.creditItem2{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    position:relative;
+}
+
+.creditInfo2{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.creditCreator2{
+    width:43px;
+    height:43px;
+    border-radius:50%;
+    background:#E0E0E0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.creatorImage{
+  width:45px;
+  height:45px;
+  margin-top:3px;
+ }
+ 
+.creatorImage2{
+  width:45px;
+  height:45px;
+  margin-top:3px;
+ }
+
+
+.creditText2 h3{
+    margin:0;
+    font-size:16px;
+    color:#111827;
+}
+
+.creditText2 p{
+    margin-top:4px;
+    margin-bottom:0;
+    font-size:13px;
+    color:#6B7280;
+}
+
+.creditLink2{
+    text-decoration:none;
+    color:#6B7280;
+    font-size:22px;
+}
+
+
+/**Credit Section 3 **/
+
+.section3Divider{
+    height:1px;
+    background:#E5E7EB;
+    margin:0 18px;
+}
+
+.storyCreditItem{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    
+}
+
+.storyCreditItem:last-child{
+    border-bottom:none;
+}
+
+.storyCreditInfo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.storyIconCreators{
+    width:43px;
+    height:43px;
+    border-radius:50%;
+    background:#E0E0E0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.storyWebImage{
+  width:45px;
+  height:45px;
+  margin-top:1px;
+  
+ }
+
+.storyHeader h3{
+    margin:0;
+    font-size:16px;
+    color:#111827;
+}
+
+.storyHeader p{
+    margin-top:4px;
+    margin-bottom:0;
+    font-size:13px;
+    color:#6B7280;
+}
+
+.storySetListOpenButton{
+  text-decoration:none;
+    color:#6B7280;
+    font-size:22px;
+}
+
+.storySetListOpenButton{
+    font-size:22px;
+    transition:transform 0.35s ease;
+}
+
+.storySetListOpenButton.open3{
+    transform:rotate(180deg);
+}
+
+.storySetIconCreatorContainer{
+   max-height:0;
+   overflow:hidden;
+   transition:max-height 0.35s ease;
+}
+
+.storySetIconCreatorContainer.open3{
+   max-height:600px;
+   overflow-y:auto;
+}
+
+.creditItem3{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    position:relative;
+}
+
+.creditInfo3{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.creditCreator3{
+    width:43px;
+    height:43px;
+    border-radius:50%;
+    background:#E0E0E0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+.storyCreatorImage{
+  width:45px;
+  height:45px;
+  margin-top:5px;
+ }
+ 
+.creditText3 h3{
+    margin:0;
+    font-size:16px;
+    color:#111827;
+}
+
+.creditText3 p{
+    margin-top:4px;
+    margin-bottom:0;
+    font-size:13px;
+    color:#6B7280;
+}
+
+.creditLink3{
+    text-decoration:none;
+    color:#6B7280;
+    font-size:22px;
+}
+
+
+
+.contactSection{
+    background:#F9FAFB;
+    margin-top:50px;
+    padding:40px 25px;
+}
+
+.contactTitle{
+    text-align:center;
+    font-size:28px;
+    color:#111827;
+    margin-top:0;
+}
+
+.contactCard{
+    background:white;
+    border:1px solid #E5E7EB;
+    border-radius:4px;
+    padding:20px;
+    margin-top:20px;
+}
+
+.contactCard h3{
+    margin:0 0 12px 0;
+    color:#111827;
+}
+
+.contactCard p{
+    color:#6B7280;
+    line-height:1.6;
+    margin:10px 0;
+}
+
+.supportEmail{
+    font-weight:600;
+    color:#081A63;
+    margin-top:15px;
+    word-break:break-word;
+}
