@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+	<meta name="viewport"
+	  content="width=device-width, initial-scale=1.0">
+
+    <link href="css/contact.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+	<div class="topBar">
+
+	  <div class="iconCard">
+
+		<img src="images/micIcon.png" class="appIcon">
+
+	  </div>
+
+	  <div class="titleBox">
+
+		<h1 class="headerTitle">
+		  App: Voice Recorder
+		</h1>
+
+		<p class="headerSubtitle">
+		  Simple, fast, and reliable audio recording
+		</p> 
+	  </div> 
+	</div>
+
+
+	<div class="middleTopBar">
+
+	  <div class="navigationSection">
+
+        <a href="index.html" class="homeTab">Home</a>
+
+        <a href="privacy.html" class="privacyTab">
+		  Privacy Policy
+        </a>
+
+        <a href="credits.html" class="creditTab">
+		  Credits
+        </a>
+
+        <a href="contact.html" class="contactTab">
+		  Contact
+        </a>
+
+	  </div>
+
+	</div>
+	
+	
+	<div class="contactContainer">
+
+	  <h1 class="contactTitle">
+        Contact Us
+	  </h1>
+
+	  <p class="contactSubtitle">
+        Have questions, suggestions, or bug reports?
+        We'd love to hear from you.
+	  </p>
+
+	  <div class="contactCard">
+
+        <h2>Email Support</h2>
+
+        <p>
+		  For support, feature requests, or general
+		  inquiries, please contact:
+        </p>
+
+        <p class="contactEmail">
+		  support@voicerecorder.com
+        </p>
+
+	  </div>
+
+	  <div class="contactCard">
+
+        <h2>Feedback</h2>
+
+        <p>
+		  Your feedback helps improve Voice Recorder.
+		  Feel free to share suggestions, report bugs,
+		  or request new features.
+        </p>
+
+	  </div>
+	  
+	  
+	  
+	  <div class="contactCard">
+
+		<h2>Send a Message</h2>
+
+		<p>
+		  Have a suggestion, feature request, or bug report?
+		  Write your message below and we'll open your email
+		  app with everything ready to send.
+		</p>
+
+		<input
+		  type="text"
+		  id="subject"
+		  class="feedbackInput"
+		  placeholder="Subject">
+
+		<textarea
+		  id="message"
+		  class="feedbackBox"
+		  placeholder="Write your message here..."></textarea>
+
+		<button
+		  class="submitBtn"
+		  onclick="sendMail()">
+		  Send Message
+		</button>
+
+	  </div>
+	  
+	  
+	  <div class="contactCard">
+
+        <h2>Response Time</h2>
+
+        <p>
+		  We aim to respond to inquiries as quickly
+		  as possible.
+        </p>
+
+	  </div>
+	</div>
+	
+	
+	
+<script>
+
+function sendMail(){
+
+var subject =
+document.getElementById("subject").value;
+
+var message =
+document.getElementById("message").value;
+
+window.location.href =
+"mailto:shaikhazad936@gmail.com"
++ "?subject=" + encodeURIComponent(subject)
++ "&body=" + encodeURIComponent(message);
+
+}
+
+</script>
+	
+
+  </body>
+</html> 
