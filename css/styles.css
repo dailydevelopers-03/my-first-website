@@ -1,406 +1,327 @@
-body {
-    margin: 0;
-    font-family: Arial;
-    background-color: White;
-    color: white;
-}
 
-/* Side drawer */
-.drawer {
-
-position: fixed;
-top: 0;
-left: -82%;
-
-width: 82%;
-height: 100%;
-
-background: #1565C0;
-
-padding: 28px 22px;
-
-box-sizing: border-box;
-
-transition: 0.35s ease;
-
-box-shadow: 0 0 25px rgba(0,0,0,0.25);
-
-overflow-y: auto;
-z-index: 1000;
-}
-
-
-/* Open drawer */
-.drawer.active {
-left: 0;
-}
-
-
-/* Header */
-.drawerHeader{
-
-display:flex;
-align-items:center;
-
-margin-top:10px;
-margin-bottom:35px;
-}
-
-
-/* Logo box */
-.logoBox{
-
-width:58px;
-height:58px;
-
-border-radius:18px;
-
-background:white;
-color:#0F5AB3;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-font-size:24px;
-font-weight:bold;
-}
-
-
-/* Texts beside logo */
-.logoTexts{
-margin-left:14px;
-}
-
-
-.drawerTitle{
-
-margin:0;
-font-size:28px;
-font-weight:bold;
-color:white;
-}
-
-
-.drawerSubtitle{
-
-margin:0;
-margin-top:4px;
-
-font-size:15px;
-color:rgba(255,255,255,0.7);
-}
-
-
-/* Search container */
-.drawableSearchBarContainer{
-
-display:flex;
-align-items:center;
-
-height:58px;
-
-background: #0D47A1;
-
-border-radius:18px;
-
-padding:0 18px;
-
-margin-bottom:30px;
-}
-
-
-/* Search input */
-.searchDrawerBar{
-
-flex:1;
-
-background:transparent;
-
-border:none;
-outline:none;
-
-font-size:20px;
-color:white;
-}
-
-/* Placeholder */
-.searchDrawerBar::placeholder{
-color:rgba(255,255,255,0.65);
-}
-
-.searchIcon2{
-  width:35px;
-  height:35px;
-  filter:brightness(1);
-  margin-right:8px;
-}
-
-/* Menu title */
-.menuTitle{
-
-font-size:20px;
-font-weight:600;
-
-margin-bottom:20px;
-
-color:rgba(255,255,255,0.75);
-}
-
-
-/* Menu panel */
-.settingsPanel{
-
-display:flex;
-flex-direction:column;
-gap:14px;
-}
-
-
-/* Each menu item */
-.menuItem{
-
-padding:18px 20px;
-
-border-radius:18px;
-font-size:22px;
-font-weight:500;
-
-transition:0.25s;
-}
-
-
-/* Active menu */
-.activeMenu{
-background:rgba(225,225,225,0.18);
-backdrop-filter: blur(4px);
-}
-
-/* Dark background overlay */
-.overlay {
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    width: 200%;
-    height: 100%;
-
-    background: rgba(0,0,0,0.4);
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition: 0.4s;
-}
-
-/* Show overlay */
-.overlay.active {
-    background:transparent;
-    visibility: visible;
-}
-
-
+body
+{
+  margin:0px;
+  font-family:Arial, sans-serif;
+  background-color:White;
+  
+  }
 
 /* Top bar 1 */
-.topbar {
+.topBar {
     display:flex;
     align-items: center;
-    padding: 15px;
-    background-color: #1565C0;
+    padding:15px 20px;
+    background:White;
+	border-bottom:1px solid #E0E0E0;
 }
 
- /*Ripple Circle*/
-.menu::before{
-  width:0;
-  height:0;
-  content:"";
-  position:absolute;
-  top:60%;
-  left:40%;
-  overflow:hidden;
-  border-radius:50%;
-  background:rgba(255,255,255,0.25);
-  transform:translate(-50%,-50%);
-  transition:width 0.35s,height 0.35s;
-}
-/*expand the ripple on click*/
-.menu:active::before{
-  width:100px;
-  height:100px;
-}
-
-/* Menu icon */
-.menu {
-    width:45px;
-	height:45px;
-    font-size: 40px; 
-	margin-left:20px;
-	position:relative;
-	margin-bottom:10px;
-    z-index:2;
-	user-select:none;
-   -webkit-user-drag:none;
-}
-
-
-.headerTitle{
-  flex:1;
-  font-size:33px;
-  text-align:center;
-  color:white;
-  margin-left:120px;
-  
-  
-}
-
-
-/*Search icon at the top right side*/
-.searchBtn{
-  width:70px;
-  height:70px;
-  position:relative;
-  cursor:pointer;
-  overflow:hidden;
+.iconCard{
   display:flex;
+  width:40px;
+  height:40px;
+  margin-bottom:5px;
+  border-radius:14px;
+  background:#081A63;
   align-items:center;
   justify-content:center;
-  border-radius:50%;
-  margin-right: auto; 
-  margin-right:25px;
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.appIcon{
+    width:20px;
+    height:20px;
+	filter:brightness(0) invert(1);
+	margin:0;
+	padding:0;
+}
+
+.titleBox{
+  display:flex;
+  flex-direction:column;
+}
+
+.headerTitle{
+  font-size:14px;
+  text-align:center;
+  margin-right:90px;
+}
+
+.headerSubtitle{
+  margin-top:1px;
+  margin-bottom:0;
+  font-size:12px;
+  color:#6B7280;
   
- }
- /*Ripple Circle*/
-.searchBtn::before{
-  width:0;
-  height:0;
-  content:"";
-  position:absolute;
-  top:50%;
-  left:50%;
-  border-radius:50%;
-  background:rgba(255,255,255,0.25);
-  transform:translate(-50%,-50%);
-  transition:width 0.35s,height 0.35s;
-}
-/*expand the ripple on click*/
-.searchBtn:active::before{
- width:120px;
- height:120px;
- opacity:1;
 }
 
-/*search top bar icon*/
-.topSearchIcon {
-    width: 46px;
-    height: 46px;
-    filter: invert(1);
-	position:relative;
-    z-index:2;
-	user-select:none;
-   -webkit-user-drag:none;
-	
-}
-
-/*Mic icon at the top right side*/
-.topMicIcon {
-    width: 44px;
-    height: 44px;
-	margin-right: 25px;
-    margin-left: 25px;
-    filter: invert(1);
-}
-
-
-/*image dp icon*/
-.userDp{
-  margin-right:10px;
-  width:85px;
-  height:85px;
-  border-radius:50%;
-  object-fit: cover;
-}
-
-/* Middle TopBar 2 */
-.middleTopBar{
-
-    display:flex;
-    align-items:center;
-    padding:15px;
-    background-color:#1976D2;
-    opacity:0;
-    transform:translateY(-30px);
-    transition:0.4s;
-    pointer-events:none;
-}
-
-/* Opening animation */
-.middleTopBar.active{
-    opacity:1;
-    transform:translateY(0);
-    pointer-events:auto;
-}
-
-/* Search bar container */
-.searchBarContainer {
-	align-items:center;
-	display:flex;
-	height:65px;
-    background: white;
-    padding: 0 12px;
-	flex:1;
-    border-radius: 30px;
-}
-
-/*searchIcon inside the searchBar*/
-.searchIcon{
-  width:35px;
-  height:35px;
-  filter:brightness(0);
-  margin-right:8px;
- }
-
-.searchbar {
-    flex:1;
-	height:40px;
-	outline:none;
-    border: none;
-    font-size: 24px;
-}
-
-
-/* Main section 3 */
-.section1 {
+.imageBannerBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 15px;
     text-align: center;
-    padding: 80px 20px;
 }
 
-/* Title */
-.title {
-    background-color: orange;
-    color: black;
-    padding: 15px;
-    border-radius: 12px;
-    display: inline-block;
+.phoneSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-/* Description */
-.description {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #000;
+.bannerTextSection {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
 }
 
-/* Button */
-.btn {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: orange;
-    border-radius: 10px;
-    border: none;
+.appBannerIcon {
+    width: 200px;
+    max-width: 80%;
+}
+
+.bannerTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.bannerDescription {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6B7280;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.bannerButtons {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.downloadBtn,
+.privacyBtn {
+    width: 40%;
+    text-align: center;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Optional: keep visual difference */
+.downloadBtn {
+    background: #081A63;
     color: white;
-    font-size: 16px;
+    text-decoration: none;
 }
+
+.privacyBtn {
+    border: 1px solid #D1D5DB;
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+ .middleTopBar{
+  display:flex;
+  height:40px;
+  justify-content:center;
+  align-items:center;
+  border-bottom:1px solid #E0E0E0;
+  background:#F5F5F5;
+
+ }
+ 
+ .navigationSection{
+   display:flex;
+   gap:30px;
+   padding:14px 0;
+   
+ }
+
+ .homeTab{ 
+  text-decoration:none;
+  color:#333;
+  font-size:14px;
+  font-weight:500;
+  padding-bottom:8px;
+  
+  }
+  
+ .privacyTab{
+  text-decoration:none;
+  font-size:14px;
+  color:#333;
+  font-weight:500;
+  padding-bottom:8px;
+   
+ }
+ 
+.creditTab{
+  text-decoration:none;
+  color:#333;
+  font-size:14px;
+  font-weight:500;
+  padding-bottom:8px;
+}
+ .contactTab{
+  text-decoration:none;
+  font-size:14px;
+  color:#333;
+  font-weight:500;
+  padding-bottom:8px;
+
+ }
+ 
+ 
+ 
+/* Features Section */
+
+.featuresSection{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    padding:20px;
+}
+
+.featureCard1{
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius:4px;
+    padding:18px 10px;
+    text-align:center;
+}
+
+.featureMicIcon{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.featureTitle1{
+    margin:0;
+    font-size:13px;
+    font-weight:600;
+    color:#333;
+}
+ 
+ .featureCard2{
+   background:#FFFFFF;
+   border:1px solid #E5E7EB;
+   border-radius:4px;
+   padding:18px 10px;
+   text-align:center;
+ }
+ 
+ .featureTrimmingIcon{
+   font-size:24px;
+   margin-bottom:10px;
+ }
+ 
+ .featureTitle2{
+   margin:0;
+   font-size:13px;
+   color:#333;
+   font-weight:600;
+   
+ }
+ 
+ .featureCard3{
+   background:#FFFFFF;
+   border:1px solid #E5E7EB;
+   border-radius:4px;
+   padding:18px 10px;
+   text-align:center;
+ }
+ 
+ .featureFavoriteIcon{
+   font-size:24px;
+   margin-bottom:10px;
+ }
+ 
+ .featureTitle3{
+   margin:0;
+   font-size:13px;
+   color:#333;
+   font-weight:600;
+   
+  }
+  
+ .featureCard4{
+   background:#FFFFFF;
+   border:1px solid #E5E7EB;
+   border-radius:4px;
+   padding:18px 10px;
+   text-align:center;
+ }
+ 
+ .featurePrivatePlayBackIcon{
+   font-size:24px;
+   margin-bottom:10px;
+ }
+ 
+ .featureTitle4{
+   margin:0;
+   font-size:13px;
+   color:#333;
+   font-weight:600;
+  
+  }
+  
+  
+ .featureCard5{
+   background:#FFFFFF;
+   border:1px solid #E5E7EB;
+   border-radius:4px;
+   padding:18px 10px;
+   text-align:center;
+ }
+ 
+ .featureManualIcon{
+   font-size:24px;
+   margin-bottom:10px;
+ }
+ 
+ .featureTitle5{
+   margin:0;
+   font-size:13px;
+   color:#333;
+   font-weight:600;
+   
+  }
+  
+ .featureCard6{
+   background:#FFFFFF;
+   border:1px solid #E5E7EB;
+   border-radius:4px;
+   padding:18px 10px;
+   text-align:center;
+ }
+ 
+ .featureKeepScreenAwakeIcon{
+   font-size:24px;
+   margin-bottom:10px;
+ }
+ 
+ .featureTitle6{
+   margin:0;
+   font-size:13px;
+   color:#333;
+   font-weight:600;
+   
+  }
+  
+  
+  
+
+
 
 
 
